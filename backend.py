@@ -19,6 +19,12 @@ except FileNotFoundError:
 def index():
     return html, 200
 
+# routine for /index.html GET
+# for restoring original HTML access
+@app.route("/index.html", methods=["GET"])
+def serve_index():
+    return send_file("index.html"), 200
+
 # routine for *.js
 @app.route("/<path:filename>.js", methods=["GET"])
 def serve_js(filename):
