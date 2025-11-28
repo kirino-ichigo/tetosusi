@@ -209,3 +209,17 @@ section .title {
   margin-bottom: 80px;    /* 下の余白（広め） */
   line-height: 1.8;       /* 行間も整えると読みやすい */
 }
+
+@media screen and (max-width: 740px) {
+  .responsive-img {
+    max-width: 100%;
+    width: 85%;
+    height: auto;
+  }
+
+  .fadeup-img{
+    max-width: 100%;
+    width:   100%;
+    height: auto;
+  }
+}
