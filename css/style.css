@@ -211,6 +211,11 @@ section .title {
 }
 
 @media screen and (max-width: 740px) {
+  header .title {
+    font-size: 18px;      /* 必要なら調整 */
+    margin: 4px;            /* 上下余白リセット */
+  }
+
   .responsive-img {
     max-width: 100%;
     width: 85%;
