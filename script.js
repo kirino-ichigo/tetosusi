@@ -11,6 +11,21 @@ mask.onclick = () => {
   nav.classList.toggle("open");
 };
 
+// ▼ スクロールしたら toggle-btn の線を非表示
+const toggleBtn = document.querySelector(".toggle-btn");
+const headerEl = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+  const headerHeight = headerEl.offsetHeight;
+
+  if (window.scrollY > headerHeight) {
+    toggleBtn.classList.add("hide-lines");
+  } else {
+    toggleBtn.classList.remove("hide-lines");
+  }
+});
+
+
 // ▼▼ ローディング（純JS版） ▼▼
 window.addEventListener("load", () => {
   const splash = document.getElementById("splash");

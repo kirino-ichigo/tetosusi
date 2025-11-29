@@ -166,8 +166,10 @@ main h1 {
   transform: translateY(-10px) rotate(-45deg);
 }
 
-@media screen and (max-width: 740px) {
-  
+/* スクロール後はボタン自体を非表示＆反応なし */
+.toggle-btn.hide-lines {
+  opacity: 0;
+  pointer-events: none;  /* ←クリック無効化（重要） */
 }
 
 /* トップのタイトルだけ大きく中央に */
@@ -205,6 +207,10 @@ section .title {
     font-size: 18px;      /* 必要なら調整 */
     margin: 4px;            /* 上下余白リセット */
   }
+
+  section .title {
+  font-size: 20px;      
+}
 
   .responsive-img {
     max-width: 100%;
