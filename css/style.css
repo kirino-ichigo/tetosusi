@@ -203,13 +203,22 @@ section .title {
 }
 
 @media screen and (max-width: 740px) {
+  header {
+  padding: 30px 80px;   /* 左右も広めに */
+}
+
   header .title {
     font-size: 18px;      /* 必要なら調整 */
     margin: 4px;            /* 上下余白リセット */
   }
 
+  /* ハンバーガーボタン */
+.toggle-btn {
+  top: 33px;
+}
+
   section .title {
-  font-size: 20px;      
+  font-size: 20px;        /* タイトルを大きく */
 }
 
   .responsive-img {
